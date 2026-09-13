@@ -2,3 +2,4 @@ Flask
 pandas
 python-dotenv
 anakin-sdk==0.1.0
+gunicorn
