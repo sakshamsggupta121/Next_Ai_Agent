@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NextStep AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="hero">
+            <h1>NextStep AI</h1>
+
+            <p>
+                AI-Powered Academic Decision Agent
+            </p>
+
+            <span>
+                Make smarter academic decisions based on your interests,
+                location, career goals and budget.
+            </span>
+        </div>
+
+
+        <div class="card">
+
+            <h2>Tell Us About Yourself</h2>
+
+            <form action="/analyze" method="POST">
+
+                <!-- Class -->
+                <label>Current Education Level</label>
+
+                <select name="class_level" required>
+
+                    <option value="">
+                        Select your level
+                    </option>
+
+                    <option value="10th">
+                        10th
+                    </option>
+
+                    <option value="12th">
+                        12th
+                    </option>
+
+                    <option value="College">
+                        College
+                    </option>
+
+                </select>
+
+
+                <!-- Stream -->
+                <label>Stream / Background</label>
+
+                <select name="stream" required>
+
+                    <option value="">
+                        Select stream
+                    </option>
+
+                    <option value="Science">
+                        Science
+                    </option>
+
+                    <option value="Commerce">
+                        Commerce
+                    </option>
+
+                    <option value="Arts">
+                        Arts
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+
+                <!-- Interest -->
+                <label>Your Interests</label>
+
+                <textarea
+                    name="interest"
+                    placeholder="Example: coding, AI, data science, business..."
+                    required></textarea>
+
+
+                <!-- Location -->
+                <label>Preferred Location</label>
+
+                <input
+                    type="text"
+                    name="location"
+                    placeholder="Example: Delhi, Noida, Greater Noida"
+                    required>
+
+
+                <!-- Budget -->
+                <label>Annual Education Budget (₹)</label>
+
+                <input
+                    type="number"
+                    name="budget"
+                    placeholder="Example: 150000"
+                    min="0"
+                    required>
+
+
+                <!-- Career -->
+                <label>Career Goal</label>
+
+                <input
+                    type="text"
+                    name="career_goal"
+                    placeholder="Example: Software Engineer"
+                    required>
+
+
+                <button type="submit">
+                    Analyze My Next Step →
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="info">
+
+            <h3>How NextStep AI Works</h3>
+
+            <div class="steps">
+
+                <div>
+                    <strong>1</strong>
+                    <p>Understand your profile</p>
+                </div>
+
+                <div>
+                    <strong>2</strong>
+                    <p>Analyze suitable options</p>
+                </div>
+
+                <div>
+                    <strong>3</strong>
+                    <p>Compare recommendations</p>
+                </div>
+
+                <div>
+                    <strong>4</strong>
+                    <p>Suggest your next step</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

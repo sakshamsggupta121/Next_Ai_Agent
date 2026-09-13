@@ -1,0 +1,21 @@
+college_name,stream,course,specialization,career,location,annual_fee,description
+IILM University,Science,B.Tech,Computer Science and Engineering,Software Developer,Greater Noida,150000,Program suitable for students interested in coding software development and technology.
+Galgotias University,Science,B.Tech,Computer Science and Engineering,Software Developer,Greater Noida,140000,Computer science program focused on programming and software development.
+Sharda University,Science,B.Tech,Computer Science and Engineering,Web Developer,Greater Noida,160000,Technology focused program suitable for web development and software careers.
+Bennett University,Science,B.Tech,Computer Science and Engineering,AI Engineer,Greater Noida,250000,Computer science program with modern technology and AI related learning.
+Amity University Noida,Science,B.Tech,Computer Science and Engineering,Software Developer,Noida,200000,Engineering program covering programming software and computing.
+Delhi University,Commerce,B.Com,Commerce,Accountant,Delhi,50000,Commerce program suitable for students interested in accounting finance and business.
+Delhi University,Arts,B.A,Arts,Content Writer,Delhi,40000,Arts program with humanities and communication related subjects.
+Jamia Millia Islamia,Science,B.Tech,Computer Engineering,Software Developer,Delhi,90000,Engineering program with computer and technology related studies.
+Jamia Millia Islamia,Arts,B.A,English,Content Writer,Delhi,30000,Arts program suitable for communication writing and humanities interests.
+Indraprastha University,Science,B.Tech,Computer Science,Web Developer,Delhi,120000,Computer science education focused on programming and technology.
+NSUT,Science,B.Tech,Computer Science,Software Developer,Delhi,100000,Engineering program for students interested in computing and software.
+DTU,Science,B.Tech,Computer Science,Software Developer,Delhi,110000,Engineering program with computer science and technology studies.
+Galgotias University,Science,B.Tech,Artificial Intelligence,AI Engineer,Greater Noida,145000,AI focused engineering program for students interested in artificial intelligence.
+Sharda University,Science,B.Tech,Artificial Intelligence,AI Engineer,Greater Noida,170000,Artificial intelligence and computing focused engineering program.
+IILM University,Science,B.Tech,Data Science,Data Scientist,Greater Noida,155000,Data science oriented program for students interested in analytics and technology.
+Bennett University,Science,B.Tech,Artificial Intelligence,AI Engineer,Greater Noida,260000,Technology program with artificial intelligence and computing subjects.
+Amity University Noida,Science,B.Tech,Data Science,Data Scientist,Noida,210000,Data science and technology focused undergraduate program.
+Delhi University,Commerce,B.Com,Finance,Financial Analyst,Delhi,55000,Commerce education suitable for finance and business careers.
+Delhi University,Arts,B.A,Mass Communication,Journalist,Delhi,45000,Program suitable for students interested in media communication and journalism.
+Jamia Millia Islamia,Arts,B.A,Mass Communication,Journalist,Delhi,35000,Communication and media focused undergraduate program.

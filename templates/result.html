@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NextStep AI - Results</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+
+        <h1>NextStep AI</h1>
+
+        <p>Personalized Academic Recommendations</p>
+
+    </div>
+
+
+    <!-- STUDENT PROFILE -->
+
+    <div class="card">
+
+        <h2>Your Profile</h2>
+
+        <div class="profile-grid">
+
+            <div>
+                <strong>Education Level</strong>
+                <p>{{ student.class_level }}</p>
+            </div>
+
+            <div>
+                <strong>Stream</strong>
+                <p>{{ student.stream }}</p>
+            </div>
+
+            <div>
+                <strong>Interest</strong>
+                <p>{{ student.interest }}</p>
+            </div>
+
+            <div>
+                <strong>Preferred Location</strong>
+                <p>{{ student.location }}</p>
+            </div>
+
+            <div>
+                <strong>Annual Budget</strong>
+                <p>₹{{ student.budget }}</p>
+            </div>
+
+            <div>
+                <strong>Career Goal</strong>
+                <p>{{ student.career_goal }}</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- RECOMMENDATIONS -->
+
+    <div class="card">
+
+        <h2>🎯 Recommended Options</h2>
+
+        {% if recommendations %}
+
+            {% for college in recommendations %}
+
+                <div class="college-card">
+
+                    <div class="college-header">
+
+                        <h3>
+                            {{ college.college_name }}
+                        </h3>
+
+                        <span class="score">
+                            Match Score:
+                            {{ college.match_score }}
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        <strong>Course:</strong>
+                        {{ college.course }}
+                    </p>
+
+
+                    <p>
+                        <strong>Specialization:</strong>
+                        {{ college.specialization }}
+                    </p>
+
+
+                    <p>
+                        <strong>Career:</strong>
+                        {{ college.career }}
+                    </p>
+
+
+                    <p>
+                        <strong>Location:</strong>
+                        {{ college.location }}
+                    </p>
+
+
+                    <p>
+                        <strong>Annual Fee:</strong>
+                        ₹{{ college.annual_fee }}
+                    </p>
+
+
+                    <p class="description">
+                        {{ college.description }}
+                    </p>
+
+                </div>
+
+            {% endfor %}
+
+        {% else %}
+
+            <div class="no-result">
+
+                <h3>No suitable options found</h3>
+
+                <p>
+                    Try increasing your budget or changing
+                    the preferred location/stream.
+                </p>
+
+            </div>
+
+        {% endif %}
+
+    </div>
+
+
+    <!-- DECISION SUMMARY -->
+
+    <div class="card next-step">
+
+        <h2>💡 Decision Summary</h2>
+
+        <p>
+            Your search is based on your
+            <strong>{{ student.stream }}</strong>
+            background, interest in
+            <strong>{{ student.interest }}</strong>,
+            career goal of
+            <strong>{{ student.career_goal }}</strong>,
+            preferred location
+            <strong>{{ student.location }}</strong>
+            and annual budget of
+            <strong>₹{{ student.budget }}</strong>.
+        </p>
+
+    </div>
+
+
+    <a href="/" class="back-button">
+        ← Analyze Another Student
+    </a>
+
+</div>
+
+</body>
+
+</html>
